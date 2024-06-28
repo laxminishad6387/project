@@ -1,0 +1,78 @@
+/* custom property */
+
+:root{
+    --primary-color:#4CAF50;   /*green*/
+    --secondary-color: #f44336;   /*red*/
+    --input-background-color: #ffffff;   /*white*/
+    --input-border-color: #cccccc;/* Grey */
+    --background-color: #f0f0f0; /* Light grey */
+    --text-color: #333333; /*Dark grey*/
+ }
+ body{
+     background-color: rgb(227, 241, 241);
+     font-family: Arial, Helvetica, sans-serif;
+     height: 100vh;
+     margin: 0px;
+     padding: 20px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ #form-container{
+    background-color: var(--input-background-color);
+    padding: 20px;
+    border-radius:8px; 
+    box-shadow: 0,0,10px,rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    
+  
+ }
+ h1{
+     text-align: center;
+     color: var(--primary-color);
+     margin-bottom: 20px;
+ }
+ button{
+     text-align: center;
+     background-color: var(--primary-color);
+     
+ }
+ .form-section{
+     margin-bottom: 15px;
+ }
+ label{
+     margin-bottom: 5px;
+     display: block;
+     color: var(--text-color);
+ 
+ }
+ input[type="text"],input[type="email"],input[type="tel"],textarea{
+     width: 100%;
+     padding: 10px;
+     border: 1px solid var(--input-border-color);
+     border-radius: 4px;
+     background-color: var(--input-background-color);
+     box-sizing: border-box;
+ }
+ input[type="checkbox"] {
+     margin-top: 10px;
+ }
+ button {
+     width: 100%;
+     padding: 10px;
+     background-color: var(--primary-color);
+     border: none;
+     border-radius: 4px;
+     color: #fff;
+     font-size: 16px;
+     cursor: pointer;
+ }
+ button:hover {
+     background-color: var(--secondary-color);
+ }
+ .with-opacity {
+     background-color: rgba(76, 175, 80, 0.1); /* Primary color with opacity */
+     padding: 10px;
+     border-radius: 4px;
+ }
